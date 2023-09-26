@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class proyecto
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,42 +22,47 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(proyecto))
         Button1 = New Button()
         Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(335, 99)
+        resources.ApplyResources(Button1, "Button1")
+        Button1.BackColor = SystemColors.ActiveCaption
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 0
-        Button1.Text = "Timo"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(335, 151)
+        resources.ApplyResources(Button2, "Button2")
+        Button2.BackColor = SystemColors.ActiveCaption
         Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
-        Button2.TabIndex = 1
-        Button2.Text = "Dubon"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
-        ' Form1
+        ' Button3
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        resources.ApplyResources(Button3, "Button3")
+        Button3.BackColor = SystemColors.ActiveCaption
+        Button3.Name = "Button3"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' proyecto
+        ' 
+        resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ControlDark
-        ClientSize = New Size(800, 450)
+        BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Cursor = Cursors.SizeAll
-        Name = "Form1"
-        Text = "Form1"
+        Name = "proyecto"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
